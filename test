@@ -7,4 +7,6 @@ def hello():
 def how():
     print("How are you?")--_
 def especific():
-    print("Especifically imported function")--_
+    print("-"*30)
+    print("Especifically imported function")
+    print("-"*30)--_
