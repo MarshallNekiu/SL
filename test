@@ -1,6 +1,5 @@
-def only_func(repository, func):
-    start = repository.find(func)
-    end = repository[start:].find('--_')+start
+def only_func(repository, func):    start = repository.find(func)
+    end = repository[start:].find('_--'[::-1)+start
     return (repository[start:end])--_
 def hello():
     print("Hello World")--_
