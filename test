@@ -1,4 +1,4 @@
-def only_func(repository, func):
+def get_from_repository(repository, func):
     start = repository.find(func)
     end = repository[start:].find('_--'[::-1])+start
     return (repository[start:end])--_
