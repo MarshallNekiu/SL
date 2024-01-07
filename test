@@ -5,16 +5,20 @@ def get_repository(repository):
         repository = repository[repository.find("_--"[::-1])+3:]
     return ret--_ALL
 
+
 def get_from_repository(repository, func):
     start = repository.find(func)
     end = repository[start:].find('_--'[::-1])+start
     return (repository[start:end])--_ONE
 
+
 def hello():
     print("Hello World")--_
 
+
 def how():
     print("How are you?")--_
+
 
 def especific():
     print("-"*30)
