@@ -3,4 +3,4 @@ def hello():
 def how():
     print("How are you?")--_
 def especific():
-    print("Especifically /"imported/" function")--_
+    print("Especifically imported function")--_
