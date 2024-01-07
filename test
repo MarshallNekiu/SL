@@ -1,4 +1,4 @@
-print("Hello World")
+_--print("Hello World")--_
 
-def how():
-    print("how are you?")
+_--def how():
+    print("how are you?")--_
