@@ -2,3 +2,5 @@ def hello():
     print("Hello World")--_
 def how():
     print("How are you?")--_
+def especific():
+    print("Especifically /"imported/" function")--_
