@@ -1,7 +1,9 @@
 def get_repository(repository):
+    ret = []
     while "def" in repository:
-        exec(repository[repository.find("def"):repository.find("_--"[::-1])])
+        ret.append(repository[repository.find("def"):repository.find("_--"[::-1])])
         repository = repository[repository.find("_--"[::-1])+3:]
+    return ret--_
 
 def get_from_repository(repository, func):
     start = repository.find(func)
