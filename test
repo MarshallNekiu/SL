@@ -1,1 +1,4 @@
 print("Hello World")
+
+def how():
+    print("how are you?")
