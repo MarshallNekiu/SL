@@ -1,7 +1,5 @@
-_--
-print("Hello World")
---_
-_--
+def hello():
+    print("Hello World")--_
 def how():
     print("how are you?")
 --_
