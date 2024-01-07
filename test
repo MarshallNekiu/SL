@@ -2,10 +2,13 @@ def get_from_repository(repository, func):
     start = repository.find(func)
     end = repository[start:].find('_--'[::-1])+start
     return (repository[start:end])--_
+
 def hello():
     print("Hello World")--_
+
 def how():
     print("How are you?")--_
+
 def especific():
     print("-"*30)
     print("Especifically imported function")
