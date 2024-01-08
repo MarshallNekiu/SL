@@ -28,6 +28,6 @@ def especific():
 
 def get_repository2(repository):
     while "def" in repository:
-        print(repository[repository.find("def"):repository.find("_--"[::-1])])
+        yield(repository[repository.find("def"):repository.find("_--"[::-1])])
         repository = repository[repository.find("_--"[::-1])+3:]--_ALL
 
