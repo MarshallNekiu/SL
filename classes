@@ -1,0 +1,11 @@
+
+############
+#My Classes#
+############
+
+class very_original_name:
+    def __init__(self, name = ""):
+        my_name = name
+           
+    def introduction():
+        print("Hello, my name is", name)
