@@ -4,7 +4,7 @@ def get_from_repository(R = "", func_defi = "") -> "":
     return (R[start:end])
 
 
-def get_repository(R = "") -> []:
+def get_repository(R = "") -> "":
     while "\n\n" in R:
         yield R[R.find("def "):R.find("\n\n")+1]
         R = R[R.find("\n\n")+1:]
