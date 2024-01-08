@@ -1,26 +1,26 @@
 def get_repository(R = ""):
     ret = []
     while "def" in R:
-        ret.append(R[R.find("def"):R.find("_--"[::-1])])
-        R = R[R.find("_--"[::-1])+3:]
-    return ret--_ALL
+        ret.append(R[R.find("def "):R[R.find("def ")+1].find("def ")])
+        R = R[R.find("def ")+1:]
+    return ret
 
 
 def get_from_repository(R = "", func_def = ""):
     start = R.find(func_def)
-    end = R[start:].find('_--'[::-1])+start
-    return (R[start:end])--_ONE
+    end = R[start+1:].find("def ")+start
+    return (R[start:end])
 
 
 def hello():
-    print("Hello World")--_
+    print("Hello World")
 
 
 def how():
-    print("How are you?")--_
+    print("How are you?")
 
 
 def some_def():
     print("-"*30)
     print("Some random function")
-    print("-"*30)--_
+    print("-"*30)
