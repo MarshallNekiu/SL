@@ -1,13 +1,13 @@
 def get_repository(R = ""):
     ret = []
-    while "def" in R:
+    while "def " in R:
         ret.append(R[R.find("def "):R[R.find("def ")+1].find("def ")])
         R = R[R.find("def ")+1:]
     return ret
 
 
-def get_from_repository(R = "", func_def = ""):
-    start = R.find(func_def)
+def get_from_repository(R = "", func_defi = ""):
+    start = R.find(func_defi)
     end = R[start+1:].find("def ")+start
     return (R[start:end])
 
