@@ -1,14 +1,14 @@
 def get_from_repository(R = "", func_defi = ""):
     start = R.find(func_defi)
-    end = R[start+1:].find(" fed"[::-1])+start
+    end = R[start+1:].find("\n\n")+1+start
     return (R[start:end])
 
 
 def get_repository(R = ""):
     ret = []
-    while " fed"[::-1] in R:
-        ret.append(R[R.find(" fed"[::-1]):R[R.find(" fed"[::-1])+1].find(" fed"[::-1])])
-        R = R[R.find(" fed"[::-1])+1:]
+    while "\n\n" in R:
+        ret.append(R[R.find("def "):R[R.find("\n\n")])
+        R = R[R.find("\n\n")+1:]
     return ret
 
 
@@ -24,3 +24,4 @@ def some_def():
     print("-"*30)
     print("Some random function")
     print("-"*30)
+
