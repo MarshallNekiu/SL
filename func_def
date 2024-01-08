@@ -1,5 +1,5 @@
-def get_from_repository(R = "", func_defi = "") -> "":
-    start = R.find(func_defi)
+def get_from_repository(R = "", func_definition = "") -> "":
+    start = R.find(func_definition)
     end = R[start+1:].find("\n\n")+1+start
     return (R[start:end])
 
