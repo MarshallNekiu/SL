@@ -7,7 +7,7 @@ def get_from_repository(R = "", func_defi = ""):
 def get_repository(R = ""):
     ret = []
     while "\n\n" in R:
-        ret.append(R[R.find("def "):R[R.find("\n\n")])
+        ret.append(R[R.find("def "):R.find("\n\n")+1])
         R = R[R.find("\n\n")+1:]
     return ret
 
