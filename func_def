@@ -1,15 +1,14 @@
-
 def get_from_repository(R = "", func_defi = ""):
     start = R.find(func_defi)
-    end = R[start+1:].find(" def ")+start
+    end = R[start+1:].find(" fed"[::-1])+start
     return (R[start:end])
 
 
 def get_repository(R = ""):
     ret = []
-    while " def " in R:
-        ret.append(R[R.find(" def "):R[R.find(" def ")+1].find(" def ")])
-        R = R[R.find(" def ")+1:]
+    while " fed"[::-1] in R:
+        ret.append(R[R.find(" fed"[::-1]):R[R.find(" fed"[::-1])+1].find(" fed"[::-1])])
+        R = R[R.find(" fed"[::-1])+1:]
     return ret
 
 
