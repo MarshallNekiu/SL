@@ -24,3 +24,7 @@ def especific():
     print("-"*30)
     print("Especifically imported function")
     print("-"*30)--_
+
+
+def exe(s):
+    exec(s)--_
