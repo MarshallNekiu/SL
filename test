@@ -1,4 +1,4 @@
-def get_repository(R = "") -> []:
+def get_repository(R = ""):
     ret = []
     while "def" in R:
         ret.append(R[R.find("def"):R.find("_--"[::-1])])
