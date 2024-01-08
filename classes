@@ -4,8 +4,11 @@
 ############
 
 class very_original_name:
-    def __init__(self, name = "Bob"):
-        my_name = name
-           
-    def introduction():
-        print("Hello, my name is", name)
+    def __init__(self, name = ""):
+        self.my_name = name
+        
+        
+    def introduction(self):
+        print("Hello, my name is", self.my_name)
+
+
