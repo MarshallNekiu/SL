@@ -1,12 +1,12 @@
-def get_from_repository(R = "", func_definition = "") -> "":
-    start = R.find(func_definition)
+def get_from_repository(R = "", func_definition = ""):
+    sart = R.find(func_definition)
     end = R[start+1:].find("\n\n")+1+start
-    return (R[start:end])
+    exec(R[start:end])
 
 
-def get_repository(R = "") -> "":
+def get_repository(R = ""):
     while "\n\n" in R:
-        yield R[R.find("def "):R.find("\n\n")+1]
+        exec(R[R.find("def "):R.find("\n\n")+1])
         R = R[R.find("\n\n")+1:]
 
 
