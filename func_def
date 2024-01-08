@@ -24,4 +24,9 @@ def some_def():
     print("-"*30)
 
 
+def get_r2epository(R = "") -> "":
+    while "\n\n" in R:
+        yield exec(R[R.find("def "):R.find("\n\n")+1])
+        R = R[R.find("\n\n")+1:]
+
 ##-> $ & ~ ` | • √ ^ á à ä â ã あ
