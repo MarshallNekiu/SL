@@ -6,8 +6,8 @@ def get_repository(R = "") -> [""]:
     return ret--_ALL
 
 
-def get_from_repository(R = "", def = "") -> "":
-    start = R.find(def)
+def get_from_repository(R = "", func_def = "") -> "":
+    start = R.find(func_def)
     end = R[start:].find('_--'[::-1])+start
     return (R[start:end])--_ONE
 
