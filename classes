@@ -4,7 +4,7 @@
 ############
 
 class very_original_name:
-    def __init__(self, name = ""):
+    def __init__(self, name = "Bob"):
         self.my_name = name
         
         
