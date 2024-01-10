@@ -17,13 +17,6 @@ class very_original_pet:
     def pet_does(self, sound = "woof"):
         print(self.pet_is, self.pet_name, sound)
 
-
-def get_from_repository(repository: str, get: str) -> "":
-    start = repository.find(get)
-    end = repository[start+1:].find("\n"*3)+1+start
-    return (repository[start:end])
-
-
 def hello():
     print("Hello World")
 
