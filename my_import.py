@@ -1,6 +1,6 @@
 
 #############
-#Test import#
+#import test#
 #############
 
 def verify():
