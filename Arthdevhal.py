@@ -36,3 +36,11 @@ def some_def():
     print("-"*30)
     print("Some random function")
     print("-"*30)
+
+
+def verify():
+  print("-Module my_import.py imported from url-")
+
+
+def verify_from():
+  print("-from works-")
