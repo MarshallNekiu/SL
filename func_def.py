@@ -3,10 +3,10 @@
 #My Functions#
 ##############
 
-def get_from_repository(R: str, func_definition: str) -> "":
-    start = R.find(func_definition)
-    end = R[start+1:].find("\n"*3)+1+start
-    return (R[start:end])
+def get_from_repository(repository: str, get: str) -> "":
+    start = repository.find(get)
+    end = repository[start+1:].find("\n"*3)+1+start
+    return (repository[start:end])
 
 
 def hello():
