@@ -1,7 +1,7 @@
 
-#####################
-#Function repository#
-#####################
+##############
+#My Functions#
+##############
 
 def get_from_repository(R: str, func_definition: str) -> "":
     start = R.find(func_definition)
