@@ -1,3 +1,4 @@
+
 #####################
 #Function repository#
 #####################
@@ -19,6 +20,4 @@ def how():
 def some_def():
     print("-"*30)
     print("Some random function")
-    print("-"*30)
-
-
+    print("-"*30
